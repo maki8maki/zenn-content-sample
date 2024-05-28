@@ -1,6 +1,7 @@
 {
     "markdown.copyFiles.destination": {
-        "*/*.md": "${documentWorkspaceFolder}/images/${documentRelativeDirName}/${documentBaseName}/${fileName}"
+        "articles/*.md": "${documentWorkspaceFolder}/images/${documentRelativeDirName}/${documentBaseName}/${fileName}",
+        "books/*/*.md": "${documentWorkspaceFolder}/images/${documentRelativeDirName}/${fileName}"
     },
     "textlint.configPath": "/workdir/.textlintrc",
     "textlint.languages": ["markdown"],
