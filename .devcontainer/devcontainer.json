@@ -11,7 +11,8 @@
 				"negokaz.zenn-editor",
 				"mhutchie.git-graph",
 				"yzhang.markdown-all-in-one",
-				"taichi.vscode-textlint"
+				"taichi.vscode-textlint",
+				"DavidAnson.vscode-markdownlint"
 			]
 		}
 	},
