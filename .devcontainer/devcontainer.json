@@ -4,6 +4,7 @@
 	"name": "Zenn",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"image": "ghcr.io/maki8maki/zenn-docker",
+	"forwardPorts": [8000],
 	"customizations": {
 		"vscode": {
 			"extensions": [
