@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "lint": "textlint $(git diff origin/main --name-only)",
+    "fix": "textlint $(git diff origin/main --name-only) --fix"
+  },
   "dependencies": {
     "textlint": "^14.0.4",
     "textlint-filter-rule-allowlist": "^4.0.0",
