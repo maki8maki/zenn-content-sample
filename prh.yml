@@ -1,0 +1,5 @@
+# For more example see https://github.com/textlint-rule/textlint-rule-prh
+
+version: 1
+rules:
+  - expected: Cookie
