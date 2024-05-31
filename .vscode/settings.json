@@ -5,4 +5,5 @@
     },
     "textlint.configPath": "/workdir/.textlintrc",
     "textlint.languages": ["markdown"],
+    "files.insertFinalNewline": true,
 }
