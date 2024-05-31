@@ -1,0 +1,25 @@
+name: Lint
+on:
+  pull_request:
+    paths:
+      - "prh.yml"
+      - ".textlintrc"
+      - "package.json"
+      - "package-lock.json"
+      - ".github/workflows/lint.yaml"
+      - "(articles|books)/**/*.md"
+jobs:
+  textlint:
+    name: textlint / reviewwdog
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+      - name: textlint-github-pr-review
+        uses: tsuyoshicho/action-textlint@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          reporter: github-pr-review
+          level: warning
+          textlint_flags: "{articles,books}/**/*.md"
