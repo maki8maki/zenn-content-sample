@@ -21,4 +21,6 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           reporter: github-pr-review
+          level: error
+          fail_on_error: true
           textlint_flags: "{articles,books}/**/*.md"
