@@ -26,15 +26,12 @@
             "ja-no-space-around-parentheses": true,
             "ja-no-space-between-full-width": true,
             "ja-space-between-half-and-full-width": {
-              "space": "always"
+              "space": "never"
             },
             "ja-space-around-code": {
               "before": true,
               "after": true
             }
-        },
-        "ban-links": {
-            "patterns": ["../images/"]
         },
         "prh": {
             "rulePaths": [
